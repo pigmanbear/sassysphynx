@@ -1,25 +1,9 @@
-# Next.js example
+# The Sassy Sphynx
 
-## How to use
-
-Download the example [or clone the repo](https://github.com/mui-org/material-ui):
-
-```sh
-curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/nextjs
-cd nextjs
-```
-
-Install it and run:
-
-```sh
-npm install
-npm run dev
-```
-
-or:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2d73f8df-b1ed-47c4-9781-65ff8eca174e/deploy-status)](https://app.netlify.com/sites/thesassysphynx/deploys)
 
 [![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui-org/material-ui/tree/master/examples/nextjs)
 
-## The idea behind the example
+## Using
 
 [Next.js](https://github.com/zeit/next.js) is a framework for server-rendered React apps.
