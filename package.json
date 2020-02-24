@@ -15,7 +15,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "yarn buil && next export",
+    "export": "yarn build && next export",
     "lint": "standard --fix 'src/**/*.js' 'src/**/*.jsx' './next.config.js'",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   },
