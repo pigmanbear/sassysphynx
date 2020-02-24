@@ -60,18 +60,21 @@ const styles = theme => ({
 })
 
 function TextField (props) {
+  console.log('TF', props)
   const {
     classes,
-    InputProps: {
-      classes: { input: InputPropsClassesInput, ...InputPropsClassesOther } = {},
-      ...InputPropsOther
-    } = {},
+    InputProps = { classes: {} },
     InputLabelProps,
     noBorder = false,
     size = 'medium',
     SelectProps,
     ...other
   } = props
+
+  const {
+    classes: { input: InputPropsClassesInput, ...InputPropsClassesOther } = {},
+    ...InputPropsOther
+  } = InputProps
 
   return (
     <MuiTextField

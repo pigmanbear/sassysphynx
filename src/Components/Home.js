@@ -8,7 +8,7 @@ import ProductHowItWorks from './modules/views/ProductHowItWorks'
 import ProductCTA from './modules/views/ProductCTA'
 import AppAppBar from './modules/views/AppAppBar'
 
-function Index () {
+function Index (props) {
   return (
     <>
       <AppAppBar />

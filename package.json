@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.9.1",
     "clsx": "latest",
     "next": "latest",
     "prop-types": "latest",
@@ -14,6 +15,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "export": "yarn buil && next export",
     "lint": "standard --fix 'src/**/*.js' 'src/**/*.jsx' './next.config.js'",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   },
