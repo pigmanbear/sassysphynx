@@ -1,4 +1,3 @@
-// --- Post bootstrap -----
 import React from 'react'
 import { Field, Form, FormSpy } from 'react-final-form'
 import { makeStyles } from '@material-ui/core/styles'
@@ -51,10 +50,11 @@ function ForgotPassword () {
       <AppForm>
         <>
           <Typography variant='h3' gutterBottom marked='center' align='center'>
-Forgot your password?
+            Forgot your password?
           </Typography>
           <Typography variant='body2' align='center'>
-            {"Enter your email address below and we'll " + 'send you a link to reset your password.'}
+            {"Enter your email address below and we'll " +
+              'send you a link to reset your password.'}
           </Typography>
         </>
         <Form
@@ -78,7 +78,12 @@ Forgot your password?
               />
               <FormSpy subscription={{ submitError: true }}>
                 {({ submitError }) =>
-                  submitError ? (<FormFeedback className={classes.feedback} error> {submitError} </FormFeedback>) : null}
+                  submitError ? (
+                    <FormFeedback className={classes.feedback} error>
+                      {' '}
+                      {submitError}{' '}
+                    </FormFeedback>
+                  ) : null}
               </FormSpy>
               <FormButton
                 className={classes.button}
@@ -89,7 +94,8 @@ Forgot your password?
               >
                 {submitting || sent ? 'In progress…' : 'Send reset link'}
               </FormButton>
-            </form>)}
+            </form>
+          )}
         </Form>
       </AppForm>
       <AppFooter />

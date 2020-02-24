@@ -1,4 +1,3 @@
-// --- Post bootstrap -----
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
@@ -61,11 +60,11 @@ function SignUp () {
             marked='center'
             align='center'
           >
-						Sign Up
+Sign Up
           </CustomTypography>
           <CustomTypography variant='body2' align='center'>
             <Link href='/premium-themes/onepirate/sign-in/' underline='always'>
-							Already have an account?
+Already have an account?
             </Link>
           </CustomTypography>
         </>
@@ -122,11 +121,11 @@ function SignUp () {
               />
               <FormSpy subscription={{ submitError: true }}>
                 {({ submitError }) =>
-				          submitError ? (
-  <FormFeedback className={classes.feedback} error>
+                  submitError ? (
+                    <FormFeedback className={classes.feedback} error>
                       {submitError}
                     </FormFeedback>
-				          ) : null}
+                  ) : null}
               </FormSpy>
               <FormButton
                 className={classes.button}
@@ -137,7 +136,7 @@ function SignUp () {
                 {submitting || sent ? 'In progress…' : 'Sign Up'}
               </FormButton>
             </form>
-				  )}
+          )}
         </Form>
       </AppForm>
       <AppFooter />

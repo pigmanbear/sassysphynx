@@ -1,4 +1,3 @@
-// --- Post bootstrap -----
 import React from 'react'
 import { Field, Form, FormSpy } from 'react-final-form'
 import { makeStyles } from '@material-ui/core/styles'
@@ -52,7 +51,7 @@ function SignIn () {
       <AppForm>
         <>
           <Typography variant='h3' gutterBottom marked='center' align='center'>
-						Sign In
+Sign In
           </Typography>
           <Typography variant='body2' align='center'>
             {'Not a member yet? '}
@@ -61,7 +60,7 @@ function SignIn () {
               align='center'
               underline='always'
             >
-							Sign Up here
+Sign Up here
             </Link>
           </Typography>
         </>
@@ -98,11 +97,11 @@ function SignIn () {
               />
               <FormSpy subscription={{ submitError: true }}>
                 {({ submitError }) =>
-				          submitError ? (
-  <FormFeedback className={classes.feedback} error>
+                  submitError ? (
+                    <FormFeedback className={classes.feedback} error>
                       {submitError}
                     </FormFeedback>
-				          ) : null}
+                  ) : null}
               </FormSpy>
               <FormButton
                 className={classes.button}
@@ -114,14 +113,14 @@ function SignIn () {
                 {submitting || sent ? 'In progress…' : 'Sign In'}
               </FormButton>
             </form>
-				  )}
+          )}
         </Form>
         <Typography align='center'>
           <Link
             underline='always'
             href='/premium-themes/onepirate/forgot-password/'
           >
-						Forgot password?
+Forgot password?
           </Link>
         </Typography>
       </AppForm>

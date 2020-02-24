@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Container from '@material-ui/core/Container'
-import Button from '../components/Button'
-import Typography from '../components/Typography'
+import Button from '../../Button'
+import { CustomTypography as Typography } from '../../Typography'
 
 const styles = theme => ({
   root: {
     display: 'flex',
     backgroundColor: theme.palette.secondary.light,
-    overflow: 'hidden'
+    overflow: 'hidden',
   },
   container: {
     marginTop: theme.spacing(10),
@@ -18,51 +18,56 @@ const styles = theme => ({
     position: 'relative',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   item: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: theme.spacing(0, 5)
+    padding: theme.spacing(0, 5),
   },
   title: {
-    marginBottom: theme.spacing(14)
+    marginBottom: theme.spacing(14),
   },
   number: {
     fontSize: 24,
     fontFamily: theme.typography.fontFamily,
     color: theme.palette.secondary.main,
-    fontWeight: theme.typography.fontWeightMedium
+    fontWeight: theme.typography.fontWeightMedium,
   },
   image: {
     height: 55,
     marginTop: theme.spacing(4),
-    marginBottom: theme.spacing(4)
+    marginBottom: theme.spacing(4),
   },
   curvyLines: {
     pointerEvents: 'none',
     position: 'absolute',
     top: -180,
-    opacity: 0.7
+    opacity: 0.7,
   },
   button: {
-    marginTop: theme.spacing(8)
-  }
+    marginTop: theme.spacing(8),
+  },
 })
 
-function ProductHowItWorks (props) {
+function ProductHowItWorks(props) {
   const { classes } = props
 
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
         <img
-          src='/static/themes/onepirate/productCurvyLines.png'
+          src="/static/themes/onepirate/productCurvyLines.png"
           className={classes.curvyLines}
-          alt='curvy lines'
+          alt="curvy lines"
         />
-        <Typography variant='h4' marked='center' className={classes.title} component='h2'>
+        <Typography
+          variant="h4"
+          marked="center"
+          className={classes.title}
+          component="h2"
+        >
           How it works
         </Typography>
         <div>
@@ -71,11 +76,11 @@ function ProductHowItWorks (props) {
               <div className={classes.item}>
                 <div className={classes.number}>1.</div>
                 <img
-                  src='/static/themes/onepirate/productHowItWorks1.svg'
-                  alt='suitcase'
+                  src="/static/themes/onepirate/productHowItWorks1.svg"
+                  alt="suitcase"
                   className={classes.image}
                 />
-                <Typography variant='h5' align='center'>
+                <Typography variant="h5" align="center">
                   Appointment every Wednesday 9am.
                 </Typography>
               </div>
@@ -84,12 +89,13 @@ function ProductHowItWorks (props) {
               <div className={classes.item}>
                 <div className={classes.number}>2.</div>
                 <img
-                  src='/static/themes/onepirate/productHowItWorks2.svg'
-                  alt='graph'
+                  src="/static/themes/onepirate/productHowItWorks2.svg"
+                  alt="graph"
                   className={classes.image}
                 />
-                <Typography variant='h5' align='center'>
-                  First come, first served. Our offers are in limited quantities, so be quick.
+                <Typography variant="h5" align="center">
+                  First come, first served. Our offers are in limited
+                  quantities, so be quick.
                 </Typography>
               </div>
             </Grid>
@@ -97,11 +103,11 @@ function ProductHowItWorks (props) {
               <div className={classes.item}>
                 <div className={classes.number}>3.</div>
                 <img
-                  src='/static/themes/onepirate/productHowItWorks3.svg'
-                  alt='clock'
+                  src="/static/themes/onepirate/productHowItWorks3.svg"
+                  alt="clock"
                   className={classes.image}
                 />
-                <Typography variant='h5' align='center'>
+                <Typography variant="h5" align="center">
                   {'New offers every week. New experiences, new surprises. '}
                   {'Your Sundays will no longer be alike.'}
                 </Typography>
@@ -110,12 +116,12 @@ function ProductHowItWorks (props) {
           </Grid>
         </div>
         <Button
-          color='secondary'
-          size='large'
-          variant='contained'
+          color="secondary"
+          size="large"
+          variant="contained"
           className={classes.button}
-          component='a'
-          href='/premium-themes/onepirate/sign-up/'
+          component="a"
+          href="/premium-themes/onepirate/sign-up/"
         >
           Get started
         </Button>
@@ -125,7 +131,7 @@ function ProductHowItWorks (props) {
 }
 
 ProductHowItWorks.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 }
 
 export default withStyles(styles)(ProductHowItWorks)
